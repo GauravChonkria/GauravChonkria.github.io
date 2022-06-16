@@ -1,0 +1,205 @@
+/*Global */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-size: cover;
+}
+
+* {
+    outline: none;
+}
+
+.container {
+    max-width: 1850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Start */
+#header-hero-container {
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+header {
+    background: transparent;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 4px;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#close-flyout {
+    display: none;
+}
+
+header ul li a {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul li a:active {
+    color: orange;
+}
+
+header ul li a:hover {
+    color: #6a11cb;
+}
+/* Header End */
+
+/* Hero Start */
+#hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#hero .hero-text {
+    position: absolute;
+    top: 40%;
+    margin: -60px auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+#hero .hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0%;
+}
+
+#hero .hero-text p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+#hero .hero-text #lm {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 9px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+#hero .hero-text #lm span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#hero .hero-text #lm span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#hero .hero-text #lm:hover span {
+    padding-right: 18px;
+}
+  
+#hero .hero-text #lm:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* Hero End */
+
+/* Hero About Start */
+#heroA {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 50%;
+    width: 100%;
+}
+
+#heroA .hero-text {
+    position: absolute;
+    top: 30%;
+    margin: -60px auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+#heroA .hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0%;
+}
+
+#heroA .hero-text p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+/* Hero About End */
