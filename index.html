@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/c1e2ff65b2.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+        <title>Gaurav Chonkria Portfolio</title>
+    </head>
+
+    <body>
+        <header id="navbar" class="navbar flex space-between center">
+            <div class="logo"><span class="carrot">&lt;</span>GAURAV<span class="carrot">/&gt;</span></div>
+            <nav id="navbar-list">
+                <ul>
+                    <li><a href="#main">Home /></a></li>
+                    <li><a href="#about-me">About /></a></li>
+                    <li><a href="#projects">Projects /></a></li>
+                    <li><a href="#contact">Contact /></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <nav class="mobile-nav">
+            <a href="#main">Home /></a>
+            <a href="#about-me">About /></a>
+            <a href="#projects">Projects /></a>
+            <a href="#contact">Contact /></a>
+        </nav>
+        
+        <main id="main">
+            <section id="head-hero-container">
+                <div id="hero">
+                    <div class="hero-text flex wrap column center">
+                        <div class="hero-title">
+                            <div class="h-start"><span>Hello!</span> I am</div>
+                            <div class="name"><span>Gaurav</span> Chonkria</div>
+                        </div>
+                        <div class="hero-para">University Student Specializing in Information Technology,<br> Such as <span class="comp-repair">Computer Repairs</span>/<span class="comp-repair">Maintenance</span> also <span class="web">&lt;WEB /&gt;</span> and <span class="app">&lt;APP /&gt;</span> Development.</div>
+                        <div class="button-row flex j-center wrap">
+                            <button class="lm"><a href="#about-me"><span>Learn More</span></a></button>
+                            <button class="dlr"><a href="#">Resume<i class="fa-solid fa-download dlb"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="hero-icons flex wrap">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--About Me-->
+        <section id="about-me">
+            <div class="section-titles p">&lt;About Me /&gt;</div>
+            <div class="about-me-wrapper grid">
+                <div class="beh-container flex wrap row">
+                    <!--Basic Info-->
+                    <div class="basic-info-container">
+                        <div class="basic-info">
+                            <span class="left-nums">01 &#183; </span><span class="keyword">class</span><span class="funcation-name"> Basic Info</span><span class="brackets"> &#123;</span><br>
+                            <span class="left-nums">02 &#183; &#183; &#183; </span><span class="keyword">constructor</span><span class="brackets"> &#40; &#41;</span><span class="brackets"> &#123;</span><br>
+                            <span class="left-nums">03 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">name</span><span class="brackets"> = </span><span class="value">'Gaurav Chonkria'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">04 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">gender</span><span class="brackets"> = </span><span class="value">'Male'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">05 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">age</span><span class="brackets"> = </span><span class="value">'24'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">06 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">dateOfBirth</span><span class="brackets"> = </span><span class="value">'April 27 1999'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">07 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">occupation</span><span class="brackets"> = </span><span class="value">'University Student'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">08 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">location</span><span class="brackets"> = </span><span class="value">'Brampton, Ontario Canada'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">09 &#183; &#183; &#183; &#183; &#183; </span><span class="keyword">this</span><span class="brackets">.</span><span class="variable-name">email</span><span class="brackets"> = </span><span class="value">'gauravrchonkria@gmail.com'</span><span class="brackets">&#59;</span><br>
+                            <span class="left-nums">10 &#183; &#183; &#183; </span><span class="brackets">&#125;</span>
+                        </div>
+                    </div>
+                    <div class="eh-container flex wrap column j-center">
+                        <!--Education-->
+                        <div class="education-container">
+                            <div class="education">
+                                <span class="left-nums">01 &#183; </span><span class="funcation-name">Education</span><span class="brackets"> &#40; &#41;</span><span class="brackets"> &#123;</span><br>
+                                <span class="left-nums">02 &#183; &#183; &#183; </span><span class="keyword">return</span><span class="brackets"> &#91;</span><br>
+                                <span class="left-nums">03 &#183; &#183; &#183; &#183; &#183; </span><span class="brackets">&#123;</span><span class="value"> '2017 - 2024'</span><span class="brackets"> &#58;</span><span class="value"> 'York University - Bachelors Degree, Information Technology (ITec)'</span><span class="brackets"> &#125;</span><span class="brackets"> &#93;</span><br>
+                                <span class="left-nums">04 &#183; </span><span class="brackets"> &#125;</span>
+                            </div>
+                        </div>
+                        <!--Hobbies-->
+                        <div class="hobbies-container">
+                            <div class="hobbies">
+                                <span class="left-nums">01 &#183; </span><span class="funcation-name">Hobbies</span><span class="brackets"> &#40; &#41;</span><span class="brackets"> &#123;</span><br>
+                                <span class="left-nums">02 &#183; &#183; &#183; </span><span class="keyword">return</span><span class="brackets"> &#91; </span><span class="value">'Coding'</span>, <span class="value">'Reparing Computers'</span>, <span class="value">'Building Computers'</span>, <span class="value">'General IT Reparing'</span>, <span class="value">'Reparing Phones'</span>, <span class="value">'Developing Websites'</span>, 
+                                <span class="value">'Video Editing'</span>, <span class="value">'Graphic Design'</span>, <span class="value">'Gaming'</span>, <span class="value">'Rubix Puzzles'</span>
+                                <span class="brackets"> &#93;</span><br>
+                                <span class="left-nums">03 &#183; </span><span class="brackets"> &#125;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Skills-->
+                <div class="skills-container">
+                    <div class="skills">
+                        <span class="left-nums">01 &#183; </span><span class="funcation-name">Tech Skills</span><span class="brackets"> &#40; &#41;</span><span class="brackets"> &#123;</span><br>
+                        <span class="left-nums">02 &#183; &#183; &#183; </span><span class="keyword">return</span><span class="brackets"> &#91; </span><span class="value">'HTML/CSS/JS'</span>, <span class="value">'Java'</span>, <span class="value">'Python'</span>, <span class="value">'ReactJS'</span>, <span class="value">'NodeJS'</span>, <span class="value">'Oracle SQL/MySQL'</span>, <span class="value">'PHP/phpMyAdmin'</span>, <span class="value">'AWS'</span>,
+                        <span class="value">'Firebase'</span>, <span class="value">'Firebase Database'</span>, <span class="value">'GitHub'</span>, <span class="value">'Adobe Photoshop/Illustrator/Premiere Pro'</span>, <span class="value">'Microsoft Word/Excel'</span>, <span class="value">'WindowsOS/MacOS'</span>
+                        <span class="brackets"> &#93;</span><br>
+                        <span class="left-nums">03 &#183; </span><span class="brackets"> &#125;</span><br>
+                        <span class="left-nums">04 &#183; </span><br>
+                        <span class="left-nums">05 &#183; </span><span class="funcation-name">Basic Skills</span><span class="brackets"> &#40; &#41;</span><span class="brackets"> &#123;</span><br>
+                        <span class="left-nums">06 &#183; &#183; &#183; </span><span class="keyword">return</span><span class="brackets"> &#91;</span><br>
+                        <span class="left-nums">07 &#183; &#183; &#183; &#183; &#183; </span><span class="brackets">&#123;</span><span class="value-G"> 'Great time management skills'</span><span class="brackets"> &#58;</span><span class="value"> 'Prioritize finishing work in a timely manner.'</span><span class="brackets"> &#125;</span><br>
+                        <span class="left-nums">08 &#183; &#183; &#183; &#183; &#183; </span><span class="brackets">&#123;</span><span class="value-G"> 'Effective team member'</span><span class="brackets"> &#58;</span><span class="value"> 'Able to work and get along with fellow co-workers.'</span><span class="brackets"> &#125;</span><br>
+                        <span class="left-nums">09 &#183; &#183; &#183; &#183; &#183; </span><span class="brackets">&#123;</span><span class="value-G"> 'Quick Learner'</span><span class="brackets"> &#58;</span><span class="value"> 'Able to quickly pick up on new learned techniques and material.'</span><span class="brackets"> &#125;</span><br>
+                        <span class="left-nums">10 &#183; &#183; &#183; &#183; &#183; </span><span class="brackets">&#123;</span><span class="value-G"> 'Great communication skills'</span><span class="brackets"> &#58;</span><span class="value"> 'I am able to understand others clearly, able to hold a conversation and speak in English, Punjabi and Hindi.'</span><span class="brackets"> &#125;</span><br>
+                        <span class="left-nums">11 &#183; &#183; &#183; &#183; &#183; </span><span class="brackets">&#123;</span><span class="value-G"> 'Excellent in computer related tasks'</span><span class="brackets"> &#58;</span><span class="value"> 'Able to fix computer related and other technical issues. Have excessive
+                            knowledge with Microsoft products.'</span><span class="brackets"> &#125;</span><span class="brackets"> &#93;</span><br>
+                        <span class="left-nums">12 &#183; </span><span class="brackets"> &#125;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects-->
+        <section id="projects">
+            <div class="section-titles w">&lt;Projects /&gt;</div>
+            <div class="num-of-projects flex">
+                <div class="school-projects">
+                    <span class="project-num">30+</span><br>
+                    <span class="project-titles">School Projects</span><br>
+                    <span class="project-text">Various of coding projects done through Higschool and University.<br>
+                        Various different games written on Java and Python<br>(Nim game, Tic-Tac-Toe, Minesweeper, etc).<br>
+                        Designed a LEGO CRUD system with various ways to shown shorted sets.<br>A Rental Housing Android App with Firebase and Android Studio.
+                    </span>
+                </div>
+                <div class="projects-vline"></div>
+                <div class="personal-projects">
+                    <span class="project-num">5+</span><br>
+                    <span class="project-titles">Personal Projects</span><br>
+                    <span class="project-text">Various of personal projects done for their use and knowledge.<br></span>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Me-->
+        <section id="contact" class="flex column center">
+            <div class="section-titles p">&lt;Contact /&gt;</div>
+            <div class="contact-container flex j-center">
+                <div class="contact-text">
+                    <div class="how-to-contact-title"><span class="lmw">Like my work?</span> Want to <span class="hm-cm">hire me</span> or <span class="hm-cm">contact me</span> to learn a bit more?</div>
+                    <div class="how-to-contact">You can contact me through the information below:</div>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i><span class="info-text">gauravrchonkria@gmail.com</span><br>
+                        <i class="fa-solid fa-phone"></i><span class="info-text">(647)-721-5049</span>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <form>
+                        <div class="how-to-contact-2">You can also send me a message below. <i class="fa-solid fa-arrow-down"></i></div>
+                        <div class="name-box">
+                            <div class="first grid">
+                                <label>First Name</label>
+                                <input type="text" class="fname-input" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="last grid">
+                                <label>Last Name</label>
+                                <input type="text" class="lname-input" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        <div class="email-box grid">
+                            <label>Email Address</label>
+                            <input type="email" class="email-input" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="message-box grid">
+                            <label>Your Message</label>
+                            <textarea class="message-input" placeholder="Enter message" required></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="#main">Home /></a> &#183;</li>
+                    <li><a href="#about-me">About /></a> &#183;</li>
+                    <li><a href="#projects">Projects /></a> &#183;</li>
+                    <li><a href="#contact">Contact /></a></li>
+                </ul>
+            </nav>
+            <div class="copyright">Copyright &copy; 2023 - Website By: Gaurav Chonkria</div>
+        </footer>
+    </body>
+</html>
