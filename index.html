@@ -7,6 +7,12 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/c1e2ff65b2.js" crossorigin="anonymous"></script>
         <script src="javaScript/script.js" defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("a9NnxlvK12DZ9bYZz");
+            })();
+        </script>
         <title>Gaurav Chonkria Portfolio</title>
     </head>
 
@@ -44,12 +50,12 @@
                         <div class="hero-para">University Student Specializing in Information Technology,<br> Such as <span class="comp-repair">Computer Repairs</span>/<span class="comp-repair">Maintenance</span> also <span class="web">&lt;WEB /&gt;</span> and <span class="app">&lt;APP /&gt;</span> Development.</div>
                         <div class="button-row flex j-center wrap">
                             <button class="lm"><a href="#about-me"><span>Learn More</span></a></button>
-                            <button class="dlr"><a href="#">Resume<i class="fa-solid fa-download dlb"></i></a></button>
+                            <button class="dlr"><a href="./downloads/Gaurav's Resume Main.pdf" download="" target="_blank">Resume<i class="fa-solid fa-download dlb"></i></a></button>
                         </div>
                     </div>
                     <div class="hero-icons flex wrap">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/GauravChonkria" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gaurav-chonkria-0936a322b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </section>
@@ -172,37 +178,37 @@
                     </div>
                 </div>
                 <div class="contact-box">
-                    <form>
+                    <form onsubmit="sendMail(); reset(); return false;">
                         <div class="how-to-contact-2">You can also send me a message below. <i class="fa-solid fa-arrow-down"></i></div>
                         <div class="name-box">
                             <div class="first grid">
-                                <label>First Name</label>
-                                <input type="text" class="fname-input" placeholder="Enter your first name" required>
+                                <label>Name</label>
+                                <input type="text" id="name" placeholder="Enter your full name" required>
                             </div>
-                            <div class="last grid">
-                                <label>Last Name</label>
-                                <input type="text" class="lname-input" placeholder="Enter your last name" required>
+                            <div class="cnumber grid">
+                                <label>Phone#</label>
+                                <input type="text" id="phone" placeholder="Enter your phone number" required>
                             </div>
                         </div>
                         <div class="email-box grid">
                             <label>Email Address</label>
-                            <input type="email" class="email-input" placeholder="Enter your email address" required>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
                         </div>
                         <div class="message-box grid">
-                            <label>Your Message</label>
-                            <textarea class="message-input" placeholder="Enter message" required></textarea>
+                            <label>Message</label>
+                            <textarea id="message" placeholder="Enter message" required></textarea>
                         </div>
                         <button type="submit">Send</button>
                     </form>
                 </div>
             </div>
         </section>
-
+        
         <!--Footer-->
         <footer>
             <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/GauravChonkria" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gaurav-chonkria-0936a322b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <nav class="footer-nav">
                 <ul class="footer-nav-list">

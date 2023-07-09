@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: #2575fc;
+    --secondary-color: #6a11cb;
+}
+
 * {
     outline: none;
     box-sizing: border-box;
@@ -12,10 +17,6 @@ html {
 
 body {
     font-family: 'Roboto';
-}
-
-section {
-    scroll-snap-align: start;
 }
 
 a {
@@ -67,7 +68,7 @@ a {
 }
 
 .p {
-    color: #6a11cb;
+    color: var(--secondary-color);
 }
 
 .w {
@@ -97,7 +98,7 @@ header {
 header .logo {
     font-size: 2.7rem;
     font-weight: bold;
-    color: #6a11cb;
+    color: var(--secondary-color);
     cursor: pointer;
     padding-left: 20px;
 }
@@ -121,13 +122,13 @@ header .logo:hover {
 }
 
 #navbar-list ul li a {
-    color: #2575fc;
+    color: var(--primary-color);
     font-size: 25px;
     font-weight: bold;
 }
 
 #navbar-list ul li a:hover {
-    color: #6a11cb;
+    color: var(--secondary-color);
 }
 
 #navbar .hamburger {
@@ -143,7 +144,7 @@ header .logo:hover {
 
 #navbar .hamburger i {
     font-size: 2rem;
-    color: #2575fc;
+    color: var(--primary-color);
 }
 
 .mobile-nav {
@@ -154,7 +155,7 @@ header .logo:hover {
     width: 100%;
     min-height: 100vh;
     z-index: 3;
-    background-color: #2575fc;
+    background-color: var(--primary-color);
     padding-top: 150px;
     transition: 0.4s;
 }
@@ -204,7 +205,7 @@ header .logo:hover {
 #head-hero-container {
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
     background-size: cover;
     border-bottom: 2px solid white;
     box-shadow: 3px 3px 3px #ccc;
@@ -278,7 +279,7 @@ header .logo:hover {
 }
 
 #hero .hero-text .button-row .lm a {
-    color: #2575fc;
+    color: var(--primary-color);
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -323,7 +324,7 @@ header .logo:hover {
 
 #hero .hero-text .button-row .dlr:hover {
     background-color: white;
-    color: #2575fc;
+    color: var(--primary-color);
 }
 
 #hero .hero-text .button-row .dlr a {
@@ -365,9 +366,9 @@ header .logo:hover {
 #about-me {
     width: 100%;
     height: 100vh;
-    border-bottom: 2px solid #2575fc;
+    border-bottom: 2px solid var(--primary-color);
     box-shadow: 3px 3px 3px #ccc;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
     line-height: 2rem;
@@ -377,12 +378,12 @@ header .logo:hover {
     width: 100%;
     justify-items: center;
     align-items: start;
-    padding: 0px 30px;
+    padding: 30px;
     gap: 10px;
 }
 
 #about-me .basic-info-container, .skills-container, .hobbies-container, .education-container {
-    background-color: #2575fc;
+    background-color: var(--primary-color);
     border-radius: 10px;
     box-shadow: 4px 4px 3px #a0a0a0cc;
 }
@@ -392,7 +393,7 @@ header .logo:hover {
 }
 
 #about-me .basic-info-container {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 #about-me .beh-container, .eh-container {
@@ -443,9 +444,9 @@ header .logo:hover {
 /* ============ Projects Start ============ */
 #projects {
     height: 100vh;
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-image: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 100%);
     background-size: cover;
-    border-bottom: 2px solid #2575fc;
+    border-bottom: 2px solid var(--primary-color);
     box-shadow: 3px 3px 3px #ccc;
     font-size: 0.9rem;
 }
@@ -493,7 +494,7 @@ header .logo:hover {
 #projects .comp-projects-container .comp-project-block .comp-project-text .comp-title {
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: #2575fc;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -554,7 +555,7 @@ header .logo:hover {
 
 #contact .contact-box {
     max-width: 600px;
-    background-color: #2575fc;
+    background-color: var(--primary-color);
     border-radius: 20px;
     box-shadow: 4px 4px 3px #a0a0a0cc;
 }
@@ -610,7 +611,7 @@ header .logo:hover {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 2px 2px 3px #000000cc;
-    color: #2575fc;
+    color: var(--primary-color);
 }
 
 #contact .contact-box button:hover {
@@ -625,7 +626,7 @@ header .logo:hover {
     font-size: 2rem;
     font-weight: bold;
     margin: 15px 0;
-    color: #2575fc;
+    color: var(--primary-color);
 }
 
 #contact .contact-text .how-to-contact-title .hm-cm {
@@ -661,7 +662,7 @@ header .logo:hover {
 /* ============ Footer Start ============ */
 footer {
     width: 100%;
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-image: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 100%);
     background-size: cover;
     color: white;
     text-align: center;
@@ -698,6 +699,6 @@ footer .footer-icons i:hover {
 }
 
 .footer-nav ul li a:hover {
-    color: #2575fc;
+    color: var(--primary-color);
 }
 /* ============ Footer End ============ */
