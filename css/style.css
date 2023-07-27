@@ -378,6 +378,7 @@ header .logo:hover {
     justify-items: center;
     align-items: start;
     padding: 30px;
+    padding-top: 11px;
     gap: 10px;
 }
 
@@ -550,6 +551,7 @@ header .logo:hover {
 #contact .contact-container {
     width: 100%;
     gap: 50px;
+    margin: auto;
 }
 
 #contact .contact-box {
