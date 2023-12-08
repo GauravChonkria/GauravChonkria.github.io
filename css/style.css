@@ -367,7 +367,7 @@ header .logo:hover {
     width: 100%;
     border-bottom: 2px solid var(--primary-color);
     box-shadow: 3px 3px 3px #ccc;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
     font-weight: bold;
     line-height: 2rem;
@@ -388,12 +388,8 @@ header .logo:hover {
     box-shadow: 4px 4px 3px #a0a0a0cc;
 }
 
-#about-me .skills-container {
-    max-width: 1720px;
-}
-
 #about-me .basic-info-container {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 #about-me .beh-container, .eh-container {
@@ -443,17 +439,15 @@ header .logo:hover {
 
 /* ============ Projects Start ============ */
 #projects {
-    height: 100vh;
     background-image: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 100%);
     background-size: cover;
     border-bottom: 2px solid var(--primary-color);
     box-shadow: 3px 3px 3px #ccc;
-    font-size: 0.9rem;
+    padding-bottom: 1rem;
 }
 
 #projects .comp-projects-container {
-    padding-bottom: 20px;
-    width: 100%;
+    padding: 2rem 0 3rem 0;
 }
 
 #projects .comp-projects-container .comp-project-block {
@@ -461,10 +455,8 @@ header .logo:hover {
 }
 
 #projects .comp-projects-container .comp-project-block .comp-project-img {
-    max-width: 550px;
-    min-width: 300px;
+    max-width: 500px;
     max-height: 300px;
-    min-height: 200px;
     padding: 5px;
     background-color: white;
     border-radius: 10px;
@@ -483,75 +475,69 @@ header .logo:hover {
 
 #projects .comp-projects-container .comp-project-block .comp-project-text {
     position: absolute;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
-    right: -50%;
-    top: 50%;
-    transform: translate(0, -50%);
+    right: 0;
+    top: 60%;
 }
 
 #projects .comp-projects-container .comp-project-block .comp-project-text .comp-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     color: var(--primary-color);
     font-weight: bold;
 }
 
 #projects .comp-projects-container .comp-project-block .comp-project-text .comp-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #projects .comp-projects-container .comp-project-block .comp-project-text .lang-used-logos {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #projects .num-of-projects {
-    width: 90%;
-    max-width: 1000px;
+    border-radius: 10px;
+    line-height: 1.5;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+#projects .num-of-projects .project-top {
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
-    margin: 0 auto;
-    line-height: 1.5;
+    border-radius: 10px 10px 0 0;
 }
 
-#projects .num-of-projects .projects-vline {
-    width: 2px;
-    height: 180px;
-    background-color: #cccc;
-    margin: auto;
-}
-
-#projects .num-of-projects .school-projects, .personal-projects {
-    width: 550px;
-    text-align: center;
+#projects .num-of-projects .project-bottom {
     padding: 10px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
 }
 
 #projects .num-of-projects .school-projects .project-titles, .personal-projects .project-titles {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 #projects .num-of-projects .school-projects .project-num, .personal-projects .project-num {
     font-size: 2.2rem;
     line-height: 1.3;
     font-weight: bold;
+    text-align: center;
 }
 /* ============ Projects End ============ */
 
 
 
 /* ============ Contact Start ============ */
-#contact {
-    height: 100vh;
-    gap: 35px;
-}
-
 #contact .contact-container {
     width: 100%;
     gap: 50px;
-    margin: auto;
+    margin-bottom: 3rem;
 }
 
 #contact .contact-box {
